@@ -32,27 +32,33 @@ data_bern = stats.bernoulli.rvs(size=10000,p=0.6)
 plt.figure()
 
 plt.subplot(231)
-plt.hist(pd.DataFrame(data_uniform),50) 
+plt.hist(pd.DataFrame(data_uniform),50)
+plt.title('Uniform')
 
 plt.subplot(232)
 
 plt.hist(pd.DataFrame(data_normal),50)
+plt.title('Normal')
 
 plt.subplot(233)
 
 plt.hist(pd.DataFrame(data_expon),50)
+plt.title('Exponential')
 
 plt.subplot(234)
 
 plt.hist(pd.DataFrame(data_poisson),50)
+plt.title('Poisson')
 
 plt.subplot(235)
 
 plt.hist(pd.DataFrame(data_binom),50)
+plt.title('Binomial')
 
 plt.subplot(236)
 
 plt.hist(pd.DataFrame(data_bern),100)
+plt.title('Bernoulli')
 
 
 plt.show()

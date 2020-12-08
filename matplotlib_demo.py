@@ -12,25 +12,38 @@ plt.figure()
 
 plt.subplot(331)
 plt.plot(x,y)
+plt.title("Plot")
 
 plt.subplot(332)
 plt.plot(x,y,'ro')
+plt.title("Dot Plot")
+
 
 plt.subplot(333)
 plt.bar(x,y)
+plt.title("Bar Plot")
+
 
 plt.subplot(334)
 plt.scatter(x,y)
+plt.title("Scatter Plot")
+
 
 plt.subplot(335)
 # the histogram of the data
 n, bins, patches = plt.hist(y,50)
+plt.title("Histogram")
+
 
 plt.subplot(336)
 plt.boxplot(y)
+plt.title("Box Plot")
+
 
 plt.subplot(337)
 stats.probplot(y, plot=plt)
+plt.title("Q-Q Plot")
+
 
 plt.subplot(338)
 
@@ -45,11 +58,12 @@ plt.boxplot((x, y, z), vert=False, showmeans=True, meanline=True,
            labels=('x', 'y', 'z'), patch_artist=True,
            medianprops={'linewidth': 2, 'color': 'purple'},
            meanprops={'linewidth': 2, 'color': 'red'})
+plt.title("Box Plot")
 
 plt.subplot(339)
 x, y, z = 128, 256, 1024
 plt.pie((x, y, z), labels=('x', 'y', 'z'), autopct='%1.1f%%')
-
+plt.title("Pie Chart")
 
 plt.show()
 
